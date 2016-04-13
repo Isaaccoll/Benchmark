@@ -1,0 +1,15 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x64\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\isaac.coll\Documents\GitHub\RpBenchmark\BenchmarkRpi\BenchmarkRpi\obj\x64\Release\ilc\intermediate\MDIL\BenchmarkRpi.mdilexe"
+"/i:C:\Users\isaac.coll\Documents\GitHub\RpBenchmark\BenchmarkRpi\BenchmarkRpi\obj\x64\Release\ilc\intermediate\MDIL\"
+/out:"C:\Users\isaac.coll\Documents\GitHub\RpBenchmark\BenchmarkRpi\BenchmarkRpi\obj\x64\Release\ilc\intermediate\Native\BenchmarkRpi.exe"
+"/res:C:\Users\isaac.coll\Documents\GitHub\RpBenchmark\BenchmarkRpi\BenchmarkRpi\obj\x64\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.2\1.2\x64\ret\MDIL"
+/shimexe
+/classlib:SharedLibrary
