@@ -46,9 +46,15 @@ namespace BenchmarkRpi
         
         listView.Items.Add("Linpack MFlops/s per single cpu = " + results.MFlops);
         listView.Items.Add("Number of MFlops/s per multi cpus = " + (results.MFlops * computerInfomation.CpuInfomation));
+        listView.Items.Add("Normal Res: " + results.NormRes);
+            listView.Items.Add("Time: " + results.Time);
         listView.Items.Add("Return the Precision time = " + results.Precision);
 
-            //
+        }
+
+        private void execute_Whetstone_Benchmark()
+        {
+
         }
     }
 }

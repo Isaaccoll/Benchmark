@@ -2987,6 +2987,7 @@ Dynamic,Method,"System.Void BenchmarkRpi.Linpack.dmxpy(System.Int32 n1, System.D
 Dynamic,Method,"System.Void BenchmarkRpi.Linpack..ctor()"
 Dynamic,Method,"System.Void BenchmarkRpi.MainPage..ctor()"
 Dynamic,Method,"System.Void BenchmarkRpi.MainPage.execute_Linpack_Benchmark()"
+Dynamic,Method,"System.Void BenchmarkRpi.MainPage.execute_Whetstone_Benchmark()"
 Dynamic,Method,"System.Void BenchmarkRpi.MainPage.InitializeComponent()"
 Dynamic,Method,"System.Void BenchmarkRpi.MainPage.Connect(System.Int32 connectionId, System.Object target)"
 Dynamic,Method,"Windows.UI.Xaml.Markup.IComponentConnector BenchmarkRpi.MainPage.GetBindingConnector(System.Int32 connectionId, System.Object target)"
