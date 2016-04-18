@@ -49,10 +49,12 @@ namespace BenchmarkRpi
             double ops, total, norma, normx;
             double resid, time;
             int n, i, lda;
-            var ipvt = new int[200];
+            var ipvt = new int[500];
 
-            lda = 201;
-            n = 100;
+            lda = 201; //201
+            n = 200;  //100
+
+            // ops = (2.0e0 * (((double)n) * n * n)) / 3.0 + 2.0 * (n * n);
 
             ops = (2.0e0 * (n * n * n)) / 3.0 + 2.0 * (n * n);
 
@@ -96,10 +98,10 @@ namespace BenchmarkRpi
             mflopsResult = (int)(mflopsResult * 1000);
             mflopsResult /= 1000;
 
-            Debug.WriteLine("Mflops/s: " + mflopsResult +
-                            "  Time: " + timeResult + " secs" +
-                            "  Norm Res: " + residnResult +
-                            "  Precision: " + epsResult);
+            //Debug.WriteLine("Mflops/s: " + mflopsResult +
+            //                "  Time: " + timeResult + " secs" +
+            //                "  Norm Res: " + residnResult +
+            //                "  Precision: " + epsResult);
 
             return new LinpackResult
             {

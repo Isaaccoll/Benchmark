@@ -36800,6 +36800,19 @@ namespace Windows.Security.ExchangeActiveSyncProvisioning
 		{
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+			public static string get_OperatingSystem(global::System.__ComObject __this)
+			{
+				string __ret = global::McgInterop.ForwardComSharedStubs.Func_string__(
+									__this, 
+									typeof(global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation).TypeHandle, 
+									global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation__Impl.Vtbl.idx_get_OperatingSystem
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
 			public static string get_SystemManufacturer(global::System.__ComObject __this)
 			{
 				string __ret = global::McgInterop.ForwardComSharedStubs.Func_string__(
@@ -36830,6 +36843,15 @@ namespace Windows.Security.ExchangeActiveSyncProvisioning
 		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation
 		{
 			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.OperatingSystem")]
+			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.get_OperatingSystem()
+			{
+				string __retVal = global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation__Impl.StubClass.get_OperatingSystem(this);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.SystemManufacturer")]
 			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.get_SystemManufacturer()
 			{
@@ -36852,6 +36874,7 @@ namespace Windows.Security.ExchangeActiveSyncProvisioning
 		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation))]
 		public unsafe partial struct Vtbl
 		{
+			internal const int idx_get_OperatingSystem = 7;
 			internal const int idx_get_SystemManufacturer = 9;
 			internal const int idx_get_SystemProductName = 10;
 		}
@@ -36860,10 +36883,66 @@ namespace Windows.Security.ExchangeActiveSyncProvisioning
 	// Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2
 	public unsafe static class IEasClientDeviceInformation2__Impl
 	{
+		// StubClass for 'Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2'
+		public static partial class StubClass
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+			public static string get_SystemHardwareVersion(global::System.__ComObject __this)
+			{
+				string __ret = global::McgInterop.ForwardComSharedStubs.Func_string__(
+									__this, 
+									typeof(global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2).TypeHandle, 
+									global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2__Impl.Vtbl.idx_get_SystemHardwareVersion
+								);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __ret;
+			}
+		}
+
+		// DispatchClass for 'Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2'
+		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2))]
+		public abstract partial class DispatchClass : global::System.__ComObject, global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2
+		{
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.OperatingSystem")]
+			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.get_OperatingSystem()
+			{
+				global::McgInterop.McgHelpers.FailFastForReducedMethod();
+				return default(string);
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.SystemManufacturer")]
+			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.get_SystemManufacturer()
+			{
+				global::McgInterop.McgHelpers.FailFastForReducedMethod();
+				return default(string);
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.SystemProductName")]
+			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation.get_SystemProductName()
+			{
+				global::McgInterop.McgHelpers.FailFastForReducedMethod();
+				return default(string);
+			}
+
+			[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+			[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2.SystemHardwareVersion")]
+			string global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2.get_SystemHardwareVersion()
+			{
+				string __retVal = global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2__Impl.StubClass.get_SystemHardwareVersion(this);
+				global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+				return __retVal;
+			}
+		}
+
 		// v-table for 'Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2'
 		[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Security.ExchangeActiveSyncProvisioning.IEasClientDeviceInformation2))]
 		public unsafe partial struct Vtbl
 		{
+			internal const int idx_get_SystemHardwareVersion = 6;
 		}
 	}
 }

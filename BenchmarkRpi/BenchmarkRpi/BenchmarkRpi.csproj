@@ -99,12 +99,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="busSpeed.cs" />
+    <Compile Include="configTime.cs" />
     <Compile Include="cpuInfo.cs" />
+    <Compile Include="Drystone.cs" />
     <Compile Include="linpack.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="memory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="temperature.cs" />
     <Compile Include="Whetstone.cs" />
   </ItemGroup>
   <ItemGroup>

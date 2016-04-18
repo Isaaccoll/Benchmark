@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>VMSN-0013</Machine>
-    <WindowsUser>isaac.coll</WindowsUser>
+    <Machine>ISAAC</Machine>
+    <WindowsUser>Michelle</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>73a09bd7-e4a5-416e-b19c-8a49dbe100cc</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\obj\x86\Release\</IntermediateOutputPath>
     <RegisteredManifestChecksum>B6AE474836892E962A1E1857440FE6680F5511E12347AD8C820B2FAC1DC875A8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>73a09bd7-e4a5-416e-b19c-8a49dbe100cc_1.0.0.0_x86__6efndc9cczbx6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>73a09bd7-e4a5-416e-b19c-8a49dbe100cc_6efndc9cczbx6!App</RegisteredUserModeAppID>
@@ -19,70 +19,70 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-14T09:05:35.483</Modified>
+      <Modified>2016-04-15T09:56:03.597</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
-      <Modified>2016-04-13T07:00:31.698</Modified>
+      <Modified>2016-04-13T07:00:31.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T16:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.dll">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.dll">
       <PackagePath>BenchmarkRpi.dll</PackagePath>
-      <Modified>2016-04-14T09:05:35.227</Modified>
+      <Modified>2016-04-15T09:56:03.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.exe">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.exe">
       <PackagePath>BenchmarkRpi.exe</PackagePath>
-      <Modified>2016-04-14T09:05:35.466</Modified>
+      <Modified>2016-04-15T09:56:03.575</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
-      <Modified>2016-03-16T14:07:12.523</Modified>
+      <Modified>2016-02-26T14:08:04.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ReadMe.txt">
       <PackagePath>ReadMe.txt</PackagePath>
-      <Modified>2016-04-13T09:08:22.425</Modified>
+      <Modified>2016-04-13T09:08:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-14T09:05:14.464</Modified>
+      <Modified>2016-04-15T09:31:40.091</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

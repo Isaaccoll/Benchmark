@@ -27,6 +27,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Height" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="BenchmarkRpi.MainPage" />
   </Roots.RootTypes>

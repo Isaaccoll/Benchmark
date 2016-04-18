@@ -1,1 +1,1 @@
-C:\Users\isaac.coll\Documents\GitHub\RpBenchmark\BenchmarkRpi\BenchmarkRpi\BenchmarkRpi.csproj;x86
+C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\BenchmarkRpi.csproj;x86

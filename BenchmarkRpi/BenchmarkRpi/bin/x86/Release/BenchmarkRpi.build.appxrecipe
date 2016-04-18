@@ -1,66 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>VMSN-0013</Machine>
-    <WindowsUser>isaac.coll</WindowsUser>
+    <Machine>ISAAC</Machine>
+    <WindowsUser>Michelle</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>73a09bd7-e4a5-416e-b19c-8a49dbe100cc</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\obj\x86\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.dll">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.dll">
       <PackagePath>BenchmarkRpi.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.exe">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\BenchmarkRpi.exe">
       <PackagePath>BenchmarkRpi.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\ReadMe.txt">
       <PackagePath>ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\isaac.coll\Source\Repos\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

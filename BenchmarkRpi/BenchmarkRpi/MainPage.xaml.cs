@@ -36,25 +36,30 @@ namespace BenchmarkRpi
 
          Linpack linpackResult = new Linpack();
          cpuInfo computerInfomation = new cpuInfo();
-      
+         busSpeed piBusSpeed = new busSpeed();
+
          computerInfomation.systemInfomation();
 
         var results = linpackResult.run_benchmark();
-          
-        listView.Items.Add("Number of logical processers: " + computerInfomation.CpuInfomation);
-        listView.Items.Add("Operating System " + computerInfomation.OperationSystem + " " + computerInfomation.VersionNumber);
+
+            var busResults = piBusSpeed.calcPass();
+
+            listView.Items.Add("Linpack Calulations : Double Precision 100x100 compiled at 32 bits");
+            listView.Items.Add("");
+            listView.Items.Add("Number of logical processers: " + computerInfomation.CpuInfomation);
+            listView.Items.Add("Operating System " + computerInfomation.OperationSystem + " " + computerInfomation.VersionNumber);
         
-        listView.Items.Add("Linpack MFlops/s per single cpu = " + results.MFlops);
-        listView.Items.Add("Number of MFlops/s per multi cpus = " + (results.MFlops * computerInfomation.CpuInfomation));
-        listView.Items.Add("Normal Res: " + results.NormRes);
+            listView.Items.Add("Linpack MFlops/s per single cpu = " + results.MFlops);
+            listView.Items.Add("Number of MFlops/s per multi cpus = " + (results.MFlops * computerInfomation.CpuInfomation));
+            listView.Items.Add("Normal Res: " + results.NormRes);
             listView.Items.Add("Time: " + results.Time);
-        listView.Items.Add("Return the Precision time = " + results.Precision);
+            listView.Items.Add("Return the Precision time = " + results.Precision);
 
         }
 
         private void execute_Whetstone_Benchmark()
         {
-
+            
         }
     }
 }

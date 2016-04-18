@@ -1,0 +1,1 @@
+C:\Users\isaac\Documents\GIT\Benchmark\BenchmarkRpi\BenchmarkRpi\BenchmarkRpi.csproj;arm

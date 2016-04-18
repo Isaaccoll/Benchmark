@@ -14,7 +14,7 @@ namespace BenchmarkRpi
         private int _cpuInfomation;
         private String _operationSystem;
         private String _versionNumber;
-        private int _cpuMFlopsTotal;
+      
 
         public int CpuInfomation
         {

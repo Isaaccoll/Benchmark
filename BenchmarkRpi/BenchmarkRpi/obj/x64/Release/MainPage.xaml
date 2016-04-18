@@ -13,7 +13,7 @@
             Raspberry Pi Benchmark Application </TextBlock>
             <TextBlock></TextBlock>
             <TextBlock></TextBlock>
-            <ListView x:ConnectionId='2' x:Name="listView" Height="240" RenderTransformOrigin="0.5,0.421"/>
+            <ListView x:ConnectionId='2' x:Name="listView" Height="340" RenderTransformOrigin="0.5,0.421"/>
         </StackPanel>
 
     </Grid>
