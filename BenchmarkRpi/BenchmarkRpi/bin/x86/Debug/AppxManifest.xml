@@ -40,7 +40,7 @@
     <build:Item Name="ProjectGUID" Value="{EA5BD28D-CAA9-4E00-9F8D-FD84B32D83C2}" />
     <build:Item Name="OptimizingToolset" Value="None" />
     <build:Item Name="TargetRuntime" Value="Managed" />
-    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25208.0" />
-    <build:Item Name="MakePri.exe" Version="10.0.10586.212 (th2_release_sec.160328-1908)" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25123.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.10586.15 (th2_release.151119-1817)" />
   </build:Metadata>
 </Package>

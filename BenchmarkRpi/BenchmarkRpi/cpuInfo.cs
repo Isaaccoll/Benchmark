@@ -43,5 +43,10 @@ namespace BenchmarkRpi
             _operationSystem = deviceInfo.OperatingSystem;
             _versionNumber = deviceInfo.SystemHardwareVersion;
         }
+
+        void GetProcessorSpeed()
+        {
+           
+        }
     }
 }

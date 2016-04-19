@@ -25,13 +25,15 @@ namespace BenchmarkRpi
         volatile int wordsToTest;
         int passes1;
         int ipass;
-        static double secs;
+        configTime callTime = new configTime();
 
         double runSecs = 0.1;
         char[] resultchars = new char[1000];
 
         void main()
         {
+            
+
             for (ipass = 0; ipass < 10; ipass++)
             {
                 calcPass();
@@ -41,15 +43,16 @@ namespace BenchmarkRpi
 
        public void checkTime()
         {
-            if (secs < runSecs)
+            
+            if (callTime.Seconds < runSecs)
             {
-                if (secs < runSecs / 8.0)
+                if (callTime.Seconds < runSecs / 8.0)
                 {
                     passes1 = passes1 * 10;
                 }
                 else
                 {
-                    passes1 = (int)(runSecs * 1.25 / secs * (double)passes1 + 1);
+                    passes1 = (int)(runSecs * 1.25 / callTime.Seconds * (double)passes1 + 1);
                 }
             }
         }
@@ -119,15 +122,15 @@ namespace BenchmarkRpi
 
                 do
                 {
-                //    start_time();
+                    callTime.start_time();
                     runAll();
-                //    end_time();
+                    callTime.end_time();
                     checkTime();
                 }
-                while (secs < runSecs);
+                while (callTime.Seconds < runSecs);
 
 
-                mbpersec[tt0] = (int)((double)passes1 * memoryMB / secs / addressInc[tt0]);
+                mbpersec[tt0] = (int)((double)passes1 * memoryMB / callTime.Seconds / addressInc[tt0]);
             }
 
             if (andsum1 != andsumx)

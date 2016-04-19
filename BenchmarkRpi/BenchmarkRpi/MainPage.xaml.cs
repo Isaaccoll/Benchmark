@@ -36,13 +36,13 @@ namespace BenchmarkRpi
 
          Linpack linpackResult = new Linpack();
          cpuInfo computerInfomation = new cpuInfo();
-         busSpeed piBusSpeed = new busSpeed();
+         //busSpeed piBusSpeed = new busSpeed();
 
          computerInfomation.systemInfomation();
 
         var results = linpackResult.run_benchmark();
 
-            var busResults = piBusSpeed.calcPass();
+           // var busResults = piBusSpeed.calcPass();
 
             listView.Items.Add("Linpack Calulations : Double Precision 100x100 compiled at 32 bits");
             listView.Items.Add("");
@@ -54,7 +54,8 @@ namespace BenchmarkRpi
             listView.Items.Add("Normal Res: " + results.NormRes);
             listView.Items.Add("Time: " + results.Time);
             listView.Items.Add("Return the Precision time = " + results.Precision);
-
+            listView.Items.Add("");
+            listView.Items.Add("Whetstone Calulations :");
         }
 
         private void execute_Whetstone_Benchmark()

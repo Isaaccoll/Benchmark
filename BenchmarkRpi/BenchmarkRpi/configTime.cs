@@ -3,43 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 
 namespace BenchmarkRpi
 {
     class configTime
     {
+        double resolution =0.0;      
+        double startSecs = 0.0;
+        double seconds;
+        uint milliseconds = 0;
 
-       public void local_time()
+        public double Seconds
         {
-         
-            DateTime t = new DateTime();
-          
-           var localtime = t.
-            sprintf(timeday, "%s", asctime(localtime(&t)));
+            get { return seconds;}
+            set {seconds = value;}
+        }
+
+        public uint Milliseconds
+        {
+            get { return milliseconds;}
+            set { milliseconds = value;}
+        }
+
+        public void local_time()
+        {
+            var localtime = DateTime.Now;       
             return;
         }
 
-       public  void getSecs()
+       public void getSecs()
         {
-            clock_gettime(CLOCK_REALTIME, &tp1);
-
-            theseSecs = tp1.tv_sec + tp1.tv_nsec / 1e9;
+            // clock_gettime(CLOCK_REALTIME, &tp1);
+            resolution = 1E9 / Stopwatch.Frequency;
             return;
         }
 
-       public  void start_time()
+       public void start_time()
         {
             getSecs();
-            startSecs = theseSecs;
+            startSecs = resolution;
             return;
         }
 
         public void end_time()
         {
             getSecs();
-            secs = theseSecs - startSecs;
-            millisecs = (int)(1000.0 * secs);
+            seconds = resolution - startSecs;
+            Milliseconds = (uint)(1000.0 * Seconds);
             return;
         }
 

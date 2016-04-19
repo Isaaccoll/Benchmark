@@ -52,7 +52,7 @@ namespace BenchmarkRpi
             var ipvt = new int[500];
 
             lda = 201; //201
-            n = 200;  //100
+            n = 100;  //100
 
             // ops = (2.0e0 * (((double)n) * n * n)) / 3.0 + 2.0 * (n * n);
 
