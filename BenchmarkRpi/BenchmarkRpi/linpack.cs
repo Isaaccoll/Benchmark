@@ -84,6 +84,11 @@ namespace BenchmarkRpi
 
             epsResult = epslon(1.0);
             residnResult = resid / (n * norma * normx * epsResult);
+            //double eps = epsResult;
+            //double x1 = x[0] - 1;
+            //double x2 = x[n - 1] - 1;
+
+
             residnResult += 0.005; // for rounding
             residnResult = (int)(residnResult * 100);
             residnResult /= 100;
