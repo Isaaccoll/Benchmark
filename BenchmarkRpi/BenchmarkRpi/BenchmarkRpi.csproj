@@ -104,11 +104,14 @@
     <Compile Include="cpuInfo.cs" />
     <Compile Include="Drystone.cs" />
     <Compile Include="linpack.cs" />
+    <Compile Include="linpackC.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="memory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage\benchmarkObject.cs" />
+    <Compile Include="Storage\storage.cs" />
     <Compile Include="temperature.cs" />
     <Compile Include="Whetstone.cs" />
   </ItemGroup>

@@ -41,15 +41,22 @@ namespace BenchmarkRpi
             double timeResult;
             double epsResult;
 
-            var a = new double[200][];
+            double[][] a = new double[200][];
             for (var q = 0; q < a.Length; q++)
                 a[q] = new double[201];
-            var b = new double[200];
-            var x = new double[200];
-            double ops, total, norma, normx;
-            double resid, time;
-            int n, i, lda;
-            var ipvt = new int[500];
+
+            double[] b = new double[200];
+            double[] x = new double[200];
+            double ops;
+            double total;
+            double norma;
+            double normx;
+            double resid;
+            double time;
+            int n;
+            int i;
+            int lda;
+            var ipvt = new int[100];
 
             lda = 201; //201
             n = 100;  //100
@@ -58,7 +65,7 @@ namespace BenchmarkRpi
 
             ops = (2.0e0 * (n * n * n)) / 3.0 + 2.0 * (n * n);
 
-            Matgen(a, lda, n, b);
+           Matgen(a, lda, n, b);
             time = Second();
             Dgefa(a, lda, n, ipvt);
             Dgesl(a, lda, n, ipvt, b, 0);
@@ -69,6 +76,7 @@ namespace BenchmarkRpi
                 x[i] = b[i];
             }
             norma = Matgen(a, lda, n, b);
+
             for (i = 0; i < n; i++)
             {
                 b[i] = -b[i];
@@ -82,7 +90,7 @@ namespace BenchmarkRpi
                 normx = (normx > Abs(x[i])) ? normx : Abs(x[i]);
             }
 
-            epsResult = epslon(1.0);
+            epsResult = epslon((double)(1.0));
             residnResult = resid / (n * norma * normx * epsResult);
             //double eps = epsResult;
             //double x1 = x[0] - 1;
