@@ -104,7 +104,6 @@
     <Compile Include="cpuInfo.cs" />
     <Compile Include="Drystone.cs" />
     <Compile Include="linpack.cs" />
-    <Compile Include="linpackC.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

@@ -27,6 +27,8 @@ namespace BenchmarkRpi
             this.InitializeComponent();
 
             execute_Linpack_Benchmark();
+
+            execute_Whetstone_Benchmark();
         }
 
         private void execute_Linpack_Benchmark()
@@ -57,12 +59,54 @@ namespace BenchmarkRpi
             listView.Items.Add("");
             listView.Items.Add("Whetstone Calulations :");
 
+            
            
         }
 
         private void execute_Whetstone_Benchmark()
         {
-            
+            System.GC.Collect();
+            System.GC.WaitForPendingFinalizers();
+
+            Whetstone whetstoneResult = new Whetstone();
+
+            whetstoneResult.ITERATIONS = 100;
+            whetstoneResult.NumberOfCycles = 100;
+
+            int numberOfRuns = 10;
+            float elapsedTime = 0;
+            float meanTime = 0;
+            float rating = 0;
+            float meanRating = 0;
+            int intRating = 0;
+
+            for (int runNumber = 1; runNumber <= numberOfRuns; runNumber++)
+            {
+                // Call the Whetstone benchmark procedure
+                // compute elapsed time
+                elapsedTime = (float)(whetstoneResult.StartCalc() / 1000);
+                this.listView.Items.Add(string.Format("{0}.Test (time for {1} cycles): {2} millisec.", runNumber, whetstoneResult.NumberOfCycles, whetstoneResult.EndTime - whetstoneResult.BeginTime));
+                
+                // sum time in milliseconds per cycle
+                meanTime = meanTime + (elapsedTime * 1000 / whetstoneResult.NumberOfCycles);
+                // Calculate the Whetstone rating based on the time for
+                // the numbers of cycles just executed
+                rating = (1000 * whetstoneResult.NumberOfCycles) / elapsedTime;
+                // Sum Whetstone rating
+                meanRating = meanRating + rating;
+                intRating = (int)rating;
+                // Reset no_of_cycles for the next run using ten cycles more
+                whetstoneResult.NumberOfCycles += 10;
+            }
+            meanTime = meanTime / numberOfRuns;
+            meanRating = meanRating / numberOfRuns;
+            intRating = (int)meanRating;
+
+            this.listView.Items.Add(string.Format("Number of Runs {0}", numberOfRuns));
+            this.listView.Items.Add(string.Format("Average time per cycle {0} millisec.", meanTime));
+            this.listView.Items.Add(string.Format("Average Whetstone Rating {0} KWIPS", intRating));
+            this.listView.Items.Add(string.Format("Average Whetstone Rating {0} MWIPS", intRating / 1000));
+
         }
     }
 }
