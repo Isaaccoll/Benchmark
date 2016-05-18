@@ -9,11 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel x:ConnectionId='1' Name="stackpanel" Margin="30" Background="WhiteSmoke">
-            <TextBlock FontSize="20" TextWrapping="WrapWholeWords" Margin="300,20">
-            Raspberry Pi Benchmark Application </TextBlock>
+            <TextBlock FontSize="29" TextWrapping="WrapWholeWords" Margin="275,20,168,20">
+            Raspberry Pi Benchmark Application</TextBlock>
             <TextBlock></TextBlock>
             <TextBlock></TextBlock>
-            <ListView x:ConnectionId='2' x:Name="listView" Height="340" RenderTransformOrigin="0.5,0.421"/>
+            <TextBlock FontSize=" 20">  Calculations</TextBlock>
+            <ListView x:ConnectionId='2' x:Name="listView" Height="480" RenderTransformOrigin="0.5,0.321" Margin="0,0,534,0"/>
+            
         </StackPanel>
 
     </Grid>

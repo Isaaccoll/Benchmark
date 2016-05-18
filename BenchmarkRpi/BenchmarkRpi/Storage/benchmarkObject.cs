@@ -14,10 +14,16 @@ namespace BenchmarkRpi.Storage
         public float MIPS { get; set; }
         
         [DataMember]
-        public float MFLOPS { get; set; }
+        public double MFLOPS { get; set; }
 
         [DataMember]
         public List<DataStored> DataBase { get; set; }
+
+        [DataMember]
+        public double MultiMFlops { get; set; }
+
+        [DataMember]
+        public string benchmarkName { get; set; }
 
     }
     [DataContract]

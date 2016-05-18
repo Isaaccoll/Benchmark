@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -26,9 +27,42 @@ namespace BenchmarkRpi
         {
             this.InitializeComponent();
 
-            execute_Linpack_Benchmark();
+           // execute_Linpack_Benchmark();
 
-            execute_Whetstone_Benchmark();
+          //  execute_Whetstone_Benchmark();
+
+         //   BenchmarkGarbaage("Garbage Test", 10, func());
+        }
+
+        public void ForEachLoopBenchmark()
+        {
+            List<int> list = GetTotalNumbers();
+        }
+
+        private List<int> GetTotalNumbers()
+        {
+            List<int> list =new List<int>();
+            for(int i =0;i<1000;i++)
+            {
+                list.Add(i);
+            }
+            return list;
+
+        }
+
+        private Action func()
+        {
+            Action<int> action = new Action<int>(Method1);
+            action.Invoke(5);
+            
+        }
+
+        static void Method1(int param)
+        {
+            if(param ==-1)
+            {
+                throw new Exception();
+            }
         }
 
         private void execute_Linpack_Benchmark()
@@ -59,8 +93,14 @@ namespace BenchmarkRpi
             listView.Items.Add("");
             listView.Items.Add("Whetstone Calulations :");
 
-            
-           
+            Storage.benchmarkObject linpackObject = new Storage.benchmarkObject();
+
+            linpackObject.benchmarkName = "Linpack Calulations: Double Precision 100x100 compiled at 32 bits";
+            linpackObject.MFLOPS = results.MFlops;
+            linpackObject.MultiMFlops = (results.MFlops * computerInfomation.CpuInfomation);
+
+            Storage.SerializableStorage<Storage.benchmarkObject>.Save("benchmark.txt", linpackObject);
+
         }
 
         private void execute_Whetstone_Benchmark()
@@ -107,6 +147,30 @@ namespace BenchmarkRpi
             this.listView.Items.Add(string.Format("Average Whetstone Rating {0} KWIPS", intRating));
             this.listView.Items.Add(string.Format("Average Whetstone Rating {0} MWIPS", intRating / 1000));
 
+        }
+
+       private void BenchmarkGarbaage(string info,int iteration,Action func)
+        {
+            func();
+            var startWatch = new Stopwatch();
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            GC.Collect();
+
+            startWatch.Start();
+            for (int i = 0; i < iteration; i++) ;
+            {
+                func();
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+
+            }
+            startWatch.Stop();
+
+            this.listView.Items.Add(string.Format(info));
+            this.listView.Items.Add(string.Format("Time Elapsed {0} ms ", startWatch.Elapsed.TotalMilliseconds));
         }
     }
 }

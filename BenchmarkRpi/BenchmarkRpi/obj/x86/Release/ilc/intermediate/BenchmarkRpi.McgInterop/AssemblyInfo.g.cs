@@ -8,6 +8,9 @@ using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 
 [assembly: global::System.Runtime.InteropServices.McgGeneratedAssembly]
+[assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Runtime.WindowsRuntime")]
+[assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Net.Http")]
+[assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Text.Encoding.CodePages")]
 
 
 // -----------------------------------------------------------------------------------------------------------
@@ -33,6 +36,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 // warning CS0169: The field 'field' is never used
 #pragma warning disable 169
 // warning CS0649: Field 'field' is never assigned to, and will always have its default value 0
+#pragma warning disable 414
+// warning CS0414: The private field 'field' is assigned but its value is never used
 #pragma warning disable 649
 // warning CS1591: Missing XML comment for publicly visible type or member 'Type_or_Member'
 #pragma warning disable 1591
